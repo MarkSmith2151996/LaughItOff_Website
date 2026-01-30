@@ -241,18 +241,21 @@
           <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 'clamp(32px, 6vw, 48px)', color: theme.text, marginBottom: 40 }}>
             🎬 PREMIER ADS
           </h2>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: 32 }}>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 32 }}>
             {/* Ad 1 - Teaser Trailer */}
             <div>
               <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 24, color: theme.accentAlt, marginBottom: 16 }}>📺 TEASER TRAILER</h3>
-              <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%', borderRadius: 16, overflow: 'hidden', background: `linear-gradient(135deg, ${theme.bgSecondary}, ${theme.bg})`, border: `3px solid ${theme.accent}`, boxShadow: `0 0 40px ${theme.accentGlow}` }}>
-                <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                  <div style={{ width: 80, height: 80, borderRadius: '50%', background: theme.accent, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 0 30px rgba(255, 107, 53, 0.6)', animation: 'pulse 2s infinite' }}>
-                    <span style={{ fontSize: 36, marginLeft: 6 }}>▶</span>
-                  </div>
-                  <p style={{ marginTop: 16, color: theme.textMuted, fontSize: 13 }}>Click to play teaser</p>
-                </div>
+              <div style={{ borderRadius: 16, overflow: 'hidden', border: `3px solid ${theme.accent}`, boxShadow: `0 0 40px ${theme.accentGlow}` }}>
+                <video
+                  controls
+                  style={{ width: '100%', display: 'block' }}
+                  poster=""
+                >
+                  <source src="premier-ad-1.mov" type="video/quicktime" />
+                  <source src="premier-ad-1.mov" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <p style={{ marginTop: 16, color: theme.textMuted, fontSize: 13 }}>🎵 "When the booth brings us together..."</p>
             </div>
@@ -260,13 +263,16 @@
             {/* Ad 2 - Official Trailer */}
             <div>
               <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 24, color: theme.accentAlt, marginBottom: 16 }}>🎥 OFFICIAL TRAILER</h3>
-              <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%', borderRadius: 16, overflow: 'hidden', background: `linear-gradient(135deg, ${theme.bgSecondary}, ${theme.bg})`, border: `3px solid ${theme.accentAlt}`, boxShadow: `0 0 40px rgba(247, 195, 49, 0.4)` }}>
-                <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                  <div style={{ width: 80, height: 80, borderRadius: '50%', background: theme.accentAlt, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: '0 0 30px rgba(247, 195, 49, 0.6)', animation: 'pulse 2s infinite' }}>
-                    <span style={{ fontSize: 36, marginLeft: 6, color: theme.bg }}>▶</span>
-                  </div>
-                  <p style={{ marginTop: 16, color: theme.textMuted, fontSize: 13 }}>Click to play official trailer</p>
-                </div>
+              <div style={{ borderRadius: 16, overflow: 'hidden', border: `3px solid ${theme.accentAlt}`, boxShadow: `0 0 40px rgba(247, 195, 49, 0.4)` }}>
+                <video
+                  controls
+                  style={{ width: '100%', display: 'block' }}
+                  poster=""
+                >
+                  <source src="premier-ad-2.mov" type="video/quicktime" />
+                  <source src="premier-ad-2.mov" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <p style={{ marginTop: 16, color: theme.textMuted, fontSize: 13 }}>🍔 "This booth is taken." - Full Trailer</p>
             </div>
